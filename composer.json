@@ -1,0 +1,16 @@
+{
+  "name": "vinnyrags/ender-dragon",
+  "description": "A WordPress project managed with Composer",
+  "type": "project",
+  "license": "MIT",
+  "require": {},
+  "extra": {},
+  "scripts": {},
+  "autoload": {
+    "psr-4": {
+      "EnderDragon\\": "lib/"
+    }
+  },
+  "config": {}
+}
+
