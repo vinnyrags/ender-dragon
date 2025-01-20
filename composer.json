@@ -1,10 +1,24 @@
 {
   "name": "vinnyrags/ender-dragon",
-  "description": "Parent Theme for all projects.",
+  "description": "Parent theme based on Timber starter theme",
   "type": "wordpress-theme",
-  "license": "GPL-3.0",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
   "require": {
-    "php": ">=8.2",
-    "composer/installers": "~1.0"
+    "timber/timber": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "EnderDragon\\": "lib"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
   }
 }
